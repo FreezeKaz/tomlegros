@@ -1,0 +1,25 @@
+@import "App.scss";
+
+#Footer {
+    position: relative;
+    bottom: 0px;
+    z-index: 3;
+    min-height: 20vh;
+    background-color: $color_black_darker_1;
+    color: $color_font_white_darker_2;
+    @media screen and (min-width: 600px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width:600px) {
+        font-size: 14px;           
+    }
+    
+        .bottom-footer{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            align-items: center;
+            padding-bottom: 100px;
+        }
+    }
