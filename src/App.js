@@ -2,9 +2,7 @@ import * as React from "react"
 import './Styles/App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-	HashRouter as Router,
-	Routes,
-	Route,
+	HashRouter, Route, Link
 	
 } from "react-router-dom";
 
@@ -33,13 +31,12 @@ class App extends React.Component {
 	render = () => {
 
 		return (
-			<Router>
+			<HashRouter>
 				<Header/>
-					<Routes>
-						<Route path="/" element={<Home/>} />
-					</Routes>
+
+						<Route exact path="/" element={<Home/>} />
 				<Footer/>
-			</Router>
+			</HashRouter>
 		);
 	}
 }
