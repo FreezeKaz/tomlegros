@@ -2,7 +2,7 @@ import * as React from "react"
 import './Styles/App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Routes,
 	Route,
 	
@@ -35,9 +35,9 @@ class App extends React.Component {
 		return (
 			<Router>
 				<Header/>
-				<Routes>
-					<Route path="/" element={<Home/>} />
-				</Routes>
+					<Routes>
+						<Route path="/" element={<Home/>} />
+					</Routes>
 				<Footer/>
 			</Router>
 		);
