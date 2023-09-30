@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.0ba13545.css",
-    "main.js": "./static/js/main.8ec25adf.js",
+    "main.js": "./static/js/main.56d9aa0e.js",
     "static/media/sukuna.mp4": "./static/media/sukuna.d91e98aa2cba23cb2624.mp4",
     "static/media/EthnocentricRg-Italic.woff": "./static/media/EthnocentricRg-Italic.80e60df5b14d167569c1.woff",
     "static/media/EthnocentricRg-Italic.woff2": "./static/media/EthnocentricRg-Italic.782d964aa6ffbf573b57.woff2",
     "index.html": "./index.html",
     "main.0ba13545.css.map": "./static/css/main.0ba13545.css.map",
-    "main.8ec25adf.js.map": "./static/js/main.8ec25adf.js.map"
+    "main.56d9aa0e.js.map": "./static/js/main.56d9aa0e.js.map"
   },
   "entrypoints": [
     "static/css/main.0ba13545.css",
-    "static/js/main.8ec25adf.js"
+    "static/js/main.56d9aa0e.js"
   ]
 }
