@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.1ce72c44.css",
-    "main.js": "./static/js/main.ce4d9b75.js",
-    "static/js/787.8d7c7703.chunk.js": "./static/js/787.8d7c7703.chunk.js",
-    "static/media/sukuna.mp4": "./static/media/sukuna.d91e98aa2cba23cb2624.mp4",
-    "static/media/EthnocentricRg-Italic.woff": "./static/media/EthnocentricRg-Italic.80e60df5b14d167569c1.woff",
-    "static/media/EthnocentricRg-Italic.woff2": "./static/media/EthnocentricRg-Italic.782d964aa6ffbf573b57.woff2",
-    "index.html": "./index.html",
-    "main.1ce72c44.css.map": "./static/css/main.1ce72c44.css.map",
-    "main.ce4d9b75.js.map": "./static/js/main.ce4d9b75.js.map",
-    "787.8d7c7703.chunk.js.map": "./static/js/787.8d7c7703.chunk.js.map"
+    "main.css": "/static/css/main.73500473.css",
+    "main.js": "/static/js/main.fd6cc214.js",
+    "static/js/787.8d7c7703.chunk.js": "/static/js/787.8d7c7703.chunk.js",
+    "static/media/sukuna.mp4": "/static/media/sukuna.d91e98aa2cba23cb2624.mp4",
+    "static/media/EthnocentricRg-Italic.woff": "/static/media/EthnocentricRg-Italic.80e60df5b14d167569c1.woff",
+    "static/media/EthnocentricRg-Italic.woff2": "/static/media/EthnocentricRg-Italic.782d964aa6ffbf573b57.woff2",
+    "index.html": "/index.html",
+    "main.73500473.css.map": "/static/css/main.73500473.css.map",
+    "main.fd6cc214.js.map": "/static/js/main.fd6cc214.js.map",
+    "787.8d7c7703.chunk.js.map": "/static/js/787.8d7c7703.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ce72c44.css",
-    "static/js/main.ce4d9b75.js"
+    "static/css/main.73500473.css",
+    "static/js/main.fd6cc214.js"
   ]
 }
