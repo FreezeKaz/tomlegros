@@ -25,6 +25,7 @@ class Home extends React.Component {
         const response = await fetch(LINK + '/api/skills?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
 		const skills = await response.json()
 		this.setState({skills:skills})
+        
         const response1 = await fetch(LINK + '/api/projects?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
 		const projects = await response1.json()
 		this.setState({projects:projects})

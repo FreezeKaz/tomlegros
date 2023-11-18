@@ -1,3 +1,3 @@
-let LINK = "https://strapideployss-c73a7544bfd4.herokuapp.com"
+let LINK = "https://strapiapp-f24ce2eb3ee1.herokuapp.com/"
 
 export default LINK

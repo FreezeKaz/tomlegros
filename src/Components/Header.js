@@ -74,11 +74,10 @@ class Header extends React.Component {
                             <h2 className="text-color-gradient-theme">Nav</h2>
                         </div>
                         <div className="link-container">
-                            <div><Link to="/">Accueil</Link></div>
-                            <div><Link to="/actus">Actus</Link></div>
-                            <div><Link to="/events">Évenement</Link></div>
-                            <div><Link to="/teams">Les équipes</Link></div>
-
+                        <a href="#skills">Skills</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#aboutme">About Me</a>
+                            <a href="#contact">Contact</a>
                         </div>
                     </div>
                 </header>

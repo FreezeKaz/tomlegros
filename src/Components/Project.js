@@ -24,7 +24,7 @@ class Project extends React.Component {
            
             <div  className = "col-xl-4 col-sm-10 project">
                  <a href={linkHref} onClick = {() =>  document.body.style.overflow = 'hidden'}>
-                <img   className="miniature" src={LINK + (this.props.project.attributes.miniature.data &&  this.props.project.attributes.miniature.data.attributes.url)} />
+                <img   className="miniature" src={this.props.project.attributes.miniatureURL} />
                 <div className="cardContent">
                 <p className="description">
                     {this.props.project.attributes.description}
