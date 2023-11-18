@@ -1,6 +1,6 @@
 ## Portfolio Website 👋
 
 - 💫 React Js
-- 🔧 Database : React
+- 🔧 Database : Strapi // Hosted on Heroku 
 
 ---
