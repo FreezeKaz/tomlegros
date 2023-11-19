@@ -26,7 +26,7 @@ class PP extends React.Component {
                 <p class="popup__text">{this.props.project.description}</p>
                 <div className="presentationVideo row">
                     <video className="bgvideo" autoPlay muted loop>
-                        <source src={bgVideo} type="video/mp4" />
+                        <source src={this.props.project.videoURL} type="video/mp4" />
                     </video>
                     <div className="filters offset-2">
                     {this.props.project.filters.data && this.props.project.filters.data.map((filters,i) => <Filters filter={filters} test={i}/> )}

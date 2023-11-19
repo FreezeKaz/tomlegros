@@ -31,6 +31,12 @@ class Home extends React.Component {
 		this.setState({projects:projects})
     }
 
+    handleDownload = () => {
+        // You can perform any additional actions before the download if needed
+        // For now, let's keep it simple and just initiate the download
+        window.location.href = 'https://github.com/FreezeKaz/WebsiteData/blob/main/CV/English%20CV.pdf';
+      };
+
     render = () => {
         return (
             <>
@@ -58,11 +64,11 @@ class Home extends React.Component {
                 <div id="aboutme">  
                     <div className="aboutContent offset-3 col-6 row">
                         <h2>About Me</h2>
-                        <p className="aboutMeText offset-1 col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <p className="aboutMeText offset-1 col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <p className="aboutMeText offset-1 col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p className="aboutMeText offset-1 col-10">Hi ! I'm Tom, a game programmer and student in third year of my Bachelor at Gaming Campus at Lyon, France. I've been programming since my young age.</p>
+                        <p className="aboutMeText offset-1 col-10">Here you will be able to see some of the projects I'm the most proud of during those 3 year at Gaming Campus. I have a strong perserverance for learning new things and being able to understand them as fast as possible as well as taking challenges. I always put some addition time in all of my / our creations to polish and / or add new features to always go further in the making. I also put additional interest in artistic direction in games but also in the asset making and the game graphics, I love making my assets my way so that I can make a pleasing game for me and for others.</p>
+                        <p className="aboutMeText offset-1 col-10">I also make websites, like this one thanks to our first year's formation on WEB languages. Now if you have any questions feel free to contact me :{"))"}</p>
                         <div className="buttonContainer">
-                            <a class="button" href="#">
+                            <a class="button" download="Tom LE GROS.pdf" href="https://download939.mediafire.com/a2k2srdck8qgsyM3bJK_8jCS8n06C4UDsuQerLZaEvUnlULy2aS0C4rUgHMcYSc7vD1xLlzBLzBeRDtlUFzhqHlV_3hehQDfCglpfP8RWY5lQ08Q9ftD_GDaMBTyrXAlkTWpzjaeNT-zf39V0hCo_AJ8lI_6nW1XOvvU_CLupg/9nm28oufdo4htjh/English+CV.pdf"> 
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -70,7 +76,7 @@ class Home extends React.Component {
                                 Download my CV
                             </a>
                         </div>
-                    </div>
+                    </div>  
                 </div>
                 <div id="separator"></div>
                 <section id="contact">
