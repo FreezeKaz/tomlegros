@@ -18,6 +18,7 @@ class Header extends React.Component {
     }
 
      componentDidMount() {
+
         window.addEventListener('scroll', this.stickyTwitch);
     }
 
@@ -25,9 +26,7 @@ class Header extends React.Component {
         window.removeEventListener('scroll', this.stickyTwitch);
     }
 
-    
 
-        
     toggleSideMenu = () => {
         if (this.state.isMenuOpen) {
             this.setState({
@@ -55,8 +54,31 @@ class Header extends React.Component {
             twitchDiv.style.transform = 'translateY(' + 0 + 'px)'
         }
     }
-
+    handleClick = (id) => {
+        if (window.location.pathname == "/") {
+          // Already on homepage, scroll!
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        } else {
+          // Go to homepage with hash
+          window.location.href = `/tomlegros#${id}`;
+        }
+      };
     render = () => {
+        const handleClick = (id) => {
+            if (window.location.pathname == "/") {
+              // Already on homepage, scroll!
+              const el = document.getElementById(id);
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+              }
+            } else {
+              // Go to homepage with hash
+              window.location.href = `/tomlegros#${id}`;
+            }
+          };
         return (
             <>
                 <header>
@@ -74,10 +96,10 @@ class Header extends React.Component {
                             <h2 className="text-color-gradient-theme">Nav</h2>
                         </div>
                         <div className="link-container">
-                        <a href="#skills">Skills</a>
-                            <a href="#portfolio">Portfolio</a>
-                            <a href="#aboutme">About Me</a>
-                            <a href="#contact">Contact</a>
+                        <a onClick={() => handleClick("skills")}>Skills</a>
+                        <a onClick={() => handleClick("portfolio")}>Portfolio</a>
+                        <a onClick={() => handleClick("aboutmee")}>About Me</a>
+                        <a onClick={() => handleClick("contactt")}>Contact</a>
                         </div>
                     </div>
                 </header>
@@ -90,24 +112,36 @@ class Header extends React.Component {
         );
     }
     renderPCBand = () => {
-        
+        const handleClick = (id) => {
+            if (window.location.pathname == "/") {
+              // Already on homepage, scroll!
+              const el = document.getElementById(id);
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+              }
+            } else {
+              // Go to homepage with hash
+              window.location.href = `/tomlegros#${id}`;
+            }
+          };
         return (    
             <div className="header d-none d-xl-flex">
                 <div className="header-band-container d-none d-xl-flex">
 
 
                     <div className="nav-container ">
-                        <Link to="/">
+                        <Link to="/tomlegros">
                             <div className="name-container">
                                 <h1 className="text-color-gradient-theme">Tom LE GROS</h1>
                             </div>
                         </Link>
                         <div className="items-nav-container">
                             <span>[</span>
-                            <a href="#skills">Skills</a>
-                            <a href="#portfolio">Portfolio</a>
-                            <a href="#aboutme">About Me</a>
-                            <a href="#contact">Contact</a>
+                            
+                        <a onClick={() => handleClick("skills")}>Skills</a>
+                        <a onClick={() => handleClick("portfolio")}>Portfolio</a>
+                        <a onClick={() => handleClick("aboutmee")}>About Me</a>
+                        <a onClick={() => handleClick("contactt")}>Contact</a>
                             <span>]</span>
                         </div>
                     </div>

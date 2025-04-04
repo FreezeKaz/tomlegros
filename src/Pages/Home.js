@@ -21,14 +21,33 @@ class Home extends React.Component {
     }
 
     async componentDidMount(){
+        const hash = window.location.hash;
 
-        const response = await fetch(LINK + '/api/skills?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
+        if (hash) {
+            const id = hash.replace("#", "");
+      
+            const scrollToSection = () => {
+              const el = document.getElementById(id);
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+              }
+            };
+      
+            setTimeout(scrollToSection, 300);
+          }
+
+        const response = await fetch(LINK + '/api/skill?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
 		const skills = await response.json()
-		this.setState({skills:skills})
+        this.setState({ skills }, () => {
+            console.log(this.state.skills); // ✅ logs correctly now
+          });       
         
-        const response1 = await fetch(LINK + '/api/projects?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
+        const response1 = await fetch(LINK + '/api/project?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
 		const projects = await response1.json()
-		this.setState({projects:projects})
+        this.setState({ projects }, () => {
+            console.log(this.state.projects); // ✅ logs correctly now
+          });
+
     }
 
     handleDownload = () => {
@@ -37,6 +56,7 @@ class Home extends React.Component {
 
     render = () => {
         return (
+            
             <>
             <div id="Home">
                 <div className="title">
@@ -44,6 +64,7 @@ class Home extends React.Component {
                         <h1 className="text-center">Game Developper</h1>
                     </div>
                 </div>
+                <section id="skills"></section>
 
                 <div id="skills">
                     <h2>Skills & Tools</h2>
@@ -59,8 +80,9 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div id="separator"></div>
+                <section id="aboutmee"></section>
                 <div id="aboutme">  
-                    <div className="aboutContent offset-3 col-6 row">
+                    <div className="aboutContent offset-xl-3 col-xl-6 row">
                         <h2>About Me</h2>
                         <p className="aboutMeText offset-1 col-10">Hi ! I'm Tom, a game programmer and I recentely graduated from a Bachelor in game development in France. I've been programming since my young age.</p>
                         <p className="aboutMeText offset-1 col-10">Here you will be able to see some of the projects I'm the most proud of. I have a strong perserverance for learning new things and being able to understand them as fast as possible as well as taking challenges. I always put some addition time in all of my / our creations to polish and / or add new features to always go further in the making. I also put additional interest in artistic direction in games but also in the asset making and the game graphics, I love making my assets my way so that I can make a pleasing game for me and for others.</p>
@@ -77,6 +99,8 @@ class Home extends React.Component {
                     </div>  
                 </div>
                 <div id="separator"></div>
+                <section id="contactt"></section>
+
                 <section id="contact">
                     <h2>Contact</h2>
                     <div class="contact-wrapper">
@@ -99,8 +123,8 @@ class Home extends React.Component {
                         <div class="direct-contact-container">
                             <ul class="contact-list">
                             <li class="list-item"> <FaLocationArrow/><span class="contact-text place">Lyon, France</span></li>
-                            <li class="list-item"><FaPhone/><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(+33) 6 83 45 05 43</a></span></li>
-                            <li class="list-item"><FaEnvelope/><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">tom.legros564@gmail.com</a></span></li>
+                            <li class="list-item"><FaPhone/><span class="contact-text phone"><a href="tel:(+33) 6 83 45 05 43" title="Give me a call">(+33) 6 83 45 05 43</a></span></li>
+                            <li class="list-item d-flex align-items-center"><FaEnvelope/><span class="contact-text gmail"><a href="mailto:tom.legros564@gmail.com" title="Send me an email">tom.legros564@gmail.com</a></span></li>
                             </ul>
                             <ul class="social-media-list">
                             <a href='https://github.com/FreezeKaz' target="_blank" class="contact-icon">

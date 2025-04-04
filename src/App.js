@@ -13,6 +13,7 @@ import Home from './Pages/Home';
 
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
+import ProjectPage from "./Pages/ProjectPage";
 
 
 
@@ -38,6 +39,7 @@ class App extends React.Component {
 				<Routes>
 				<Route path="/" element={<Home/>} />
 					<Route path="/tomlegros" element={<Home/>} />
+					<Route path="/tomlegros/project/:id" element={<ProjectPage/>} />
 					</Routes>
 				<Footer/>
 			</Router>

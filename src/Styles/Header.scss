@@ -114,6 +114,7 @@
                 overflow: hidden;
             }
         }
+      
 
         .space-logo {
             width: 9vh;
@@ -124,6 +125,7 @@
             width: 100%;
             align-items: center;
             justify-content: space-between;
+            box-shadow: 0px 2px 20px 0px #ff6512;
 
             .small-logo-container {
                 height: 100%;
@@ -208,6 +210,14 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        a{
+            text-transform: uppercase;
+            color: v.$color_font_white_darker_1;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 25px;
+            border-bottom: solid 1px v.$color_orange;
+        }
         div{
             padding: 10px 5px;
             width: 100%;
@@ -215,14 +225,7 @@
             &:hover{
                 background-color: v.$color_black_darker_2;
             }
-            a{
-                text-transform: uppercase;
-                color: v.$color_font_white_darker_1;
-                text-decoration: none;
-                font-weight: 600;
-                font-size: 25px;
-                border-bottom: solid 1px v.$color_orange;
-            }
+
         }
     }
 }

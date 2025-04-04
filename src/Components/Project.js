@@ -11,7 +11,6 @@ class Project extends React.Component {
     constructor(props) {
         super(props)
         this.state={
-
 		}
     }   
    
@@ -19,19 +18,18 @@ class Project extends React.Component {
 
 
     render = () => {
-        var linkHref = "#" + this.props.project.attributes.name;
+        var linkHref = "/tomlegros/project/" + this.props.project.documentId;
         return (
            
             <div  className = "col-xl-4 col-sm-10 project">
-                 <a href={linkHref} onClick = {() =>  document.body.style.overflow = 'hidden'}>
-                <img   className="miniature" src={this.props.project.attributes.miniatureURL} />
+                 <a href={linkHref}>
+                <img   className="miniature" src={this.props.project.miniatureURL} />
                 <div className="cardContent">
                 <p className="description">
-                    {this.props.project.attributes.description}
+                    {this.props.project.description}
                 </p>
                 </div>
                 </a>
-                <ProjectPopup project={this.props.project.attributes}/>
             </div>
 
 
