@@ -23,18 +23,7 @@ class Home extends React.Component {
     async componentDidMount(){
         const hash = window.location.hash;
 
-        if (hash) {
-            const id = hash.replace("#", "");
-      
-            const scrollToSection = () => {
-              const el = document.getElementById(id);
-              if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
-              }
-            };
-      
-            setTimeout(scrollToSection, 300);
-          }
+
 
         const response = await fetch(LINK + '/api/skill?populate=*', {method: 'GET', headers: {'Accept': 'application/json', 'Content-Type':'application/json'}})
 		const skills = await response.json()

@@ -55,7 +55,7 @@ class Header extends React.Component {
         }
     }
     handleClick = (id) => {
-        if (window.location.pathname == "/") {
+        if (window.location.hash == "#/" || window.location.hash == "#") {
           // Already on homepage, scroll!
           const el = document.getElementById(id);
           if (el) {
@@ -63,12 +63,13 @@ class Header extends React.Component {
           }
         } else {
           // Go to homepage with hash
-          window.location.href = `/tomlegros#${id}`;
+          window.location.href = `/#/`;
         }
       };
+    
     render = () => {
         const handleClick = (id) => {
-            if (window.location.pathname == "/") {
+            if (window.location.hash == "#/" || window.location.hash == "#") {
               // Already on homepage, scroll!
               const el = document.getElementById(id);
               if (el) {
@@ -76,7 +77,7 @@ class Header extends React.Component {
               }
             } else {
               // Go to homepage with hash
-              window.location.href = `/tomlegros#${id}`;
+              window.location.href = `/#/`;
             }
           };
         return (
@@ -113,7 +114,7 @@ class Header extends React.Component {
     }
     renderPCBand = () => {
         const handleClick = (id) => {
-            if (window.location.pathname == "/") {
+            if (window.location.hash == "#/" || window.location.hash == "#") {
               // Already on homepage, scroll!
               const el = document.getElementById(id);
               if (el) {
@@ -121,7 +122,7 @@ class Header extends React.Component {
               }
             } else {
               // Go to homepage with hash
-              window.location.href = `/tomlegros#${id}`;
+              window.location.href = `/#/`;
             }
           };
         return (    
@@ -130,7 +131,7 @@ class Header extends React.Component {
 
 
                     <div className="nav-container ">
-                        <Link to="/tomlegros">
+                        <Link to="/#">
                             <div className="name-container">
                                 <h1 className="text-color-gradient-theme">Tom LE GROS</h1>
                             </div>
