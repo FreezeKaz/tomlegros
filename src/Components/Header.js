@@ -33,6 +33,8 @@ class Header extends React.Component {
                 isMenuOpen: false,
             }, () => {
                 document.getElementById("Header-side-nav").classList.remove("opened");
+                document.body.classList.remove('menu-open');
+
             })
         }
         else {
@@ -40,6 +42,8 @@ class Header extends React.Component {
                 isMenuOpen: true,
             }, () => {
                 document.getElementById("Header-side-nav").classList.add("opened");
+                document.body.classList.add('menu-open');
+
             })
         }
     }
@@ -63,22 +67,13 @@ class Header extends React.Component {
           }
         } else {
           // Go to homepage with hash
-          window.location.href = `/#/`;
+          window.location.href = `/tomlegros/`;
         }
       };
     
     render = () => {
-        const handleClick = (id) => {
-            if (window.location.hash == "#/" || window.location.hash == "#") {
-              // Already on homepage, scroll!
-              const el = document.getElementById(id);
-              if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
-              }
-            } else {
-              // Go to homepage with hash
-              window.location.href = `/#/`;
-            }
+        const OpenMenu = (id) => {
+
           };
         return (
             <>
@@ -97,10 +92,10 @@ class Header extends React.Component {
                             <h2 className="text-color-gradient-theme">Nav</h2>
                         </div>
                         <div className="link-container">
-                        <a onClick={() => handleClick("skills")}>Skills</a>
-                        <a onClick={() => handleClick("portfolio")}>Portfolio</a>
-                        <a onClick={() => handleClick("aboutmee")}>About Me</a>
-                        <a onClick={() => handleClick("contactt")}>Contact</a>
+                        <a href="/tomlegros">Skills</a>
+                        <a href="/tomlegros">Portfolio</a>
+                        <a href="/tomlegros">About Me</a>
+                        <a href="/tomlegros">Contact</a>
                         </div>
                     </div>
                 </header>
@@ -122,7 +117,7 @@ class Header extends React.Component {
               }
             } else {
               // Go to homepage with hash
-              window.location.href = `/#/`;
+              window.location.href = `/tomlegros/`;
             }
           };
         return (    
@@ -131,7 +126,7 @@ class Header extends React.Component {
 
 
                     <div className="nav-container ">
-                        <Link to="/#">
+                        <Link to="/">
                             <div className="name-container">
                                 <h1 className="text-color-gradient-theme">Tom LE GROS</h1>
                             </div>
@@ -139,10 +134,10 @@ class Header extends React.Component {
                         <div className="items-nav-container">
                             <span>[</span>
                             
-                        <a onClick={() => handleClick("skills")}>Skills</a>
-                        <a onClick={() => handleClick("portfolio")}>Portfolio</a>
-                        <a onClick={() => handleClick("aboutmee")}>About Me</a>
-                        <a onClick={() => handleClick("contactt")}>Contact</a>
+                        <a href="/tomlegros">Skills</a>
+                        <a href="/tomlegros">Portfolio</a>
+                        <a href="/tomlegros">About Me</a>
+                        <a href="/tomlegros">Contact</a>
                             <span>]</span>
                         </div>
                     </div>

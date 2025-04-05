@@ -89,7 +89,7 @@ const ProjectPage = () => {
                   <p className="col-11" key={i}>
                     <strong>{label}:</strong>{' '}
                     <a href={url} target="blank">
-                      {url}
+                      LINK 🔗
                     </a>
                   </p>
                 );

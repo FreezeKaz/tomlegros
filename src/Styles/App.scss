@@ -39,7 +39,14 @@ $font_basic : 'Comfortaa', cursive;
     font-style: italic;
     font-display: swap;
 }
-
+html,body{
+overflow-x: hidden !important;
+	.menu-open {
+		overflow: hidden !important;
+		position: fixed; // 💍 Lock her in place
+	  }
+	 
+	}
 .separator{
 	margin-left: auto;
 	margin-right: auto;

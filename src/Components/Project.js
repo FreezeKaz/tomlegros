@@ -18,7 +18,7 @@ class Project extends React.Component {
 
 
     render = () => {
-        var linkHref = "tomlegros/#/project/" + this.props.project.documentId;
+        var linkHref = process.env.PUBLIC_URL + "/#/project/" + this.props.project.documentId;
         return (
            
             <div  className = "col-xl-4 col-sm-10 project">

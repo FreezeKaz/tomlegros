@@ -50,10 +50,9 @@ class Home extends React.Component {
             <div id="Home">
                 <div className="title">
                     <div className="position">
-                        <h1 className="text-center">Game Developper</h1>
+                        <h1 className="text-center">Game Developer</h1>
                     </div>
                 </div>
-                <section id="skills"></section>
 
                 <div id="skills">
                     <h2>Skills & Tools</h2>
@@ -73,8 +72,9 @@ class Home extends React.Component {
                 <div id="aboutme">  
                     <div className="aboutContent offset-xl-3 col-xl-6 row">
                         <h2>About Me</h2>
-                        <p className="aboutMeText offset-1 col-10">Hi ! I'm Tom, a game programmer and I recentely graduated from a Bachelor in game development in France. I've been programming since my young age.</p>
-                        <p className="aboutMeText offset-1 col-10">Here you will be able to see some of the projects I'm the most proud of. I have a strong perserverance for learning new things and being able to understand them as fast as possible as well as taking challenges. I always put some addition time in all of my / our creations to polish and / or add new features to always go further in the making. I also put additional interest in artistic direction in games but also in the asset making and the game graphics, I love making my assets my way so that I can make a pleasing game for me and for others.</p>
+                        <p className="aboutMeText offset-1 col-10">Hi ! I'm Tom, a pasionate game programmer still freshly graduated from a Game Development Bachelor's in France.</p>
+                        <p className="aboutMeText offset-1 col-10">Here you will be able to see some of the projects I'm the most proud of. I have a strong perserverance for learning new things and being able to understand them as fast as possible as well as taking challenges and pushing boundaries. I always put some addition time in all of my creations to polish and add new features to always go further in the making.</p>
+                        <p className="aboutMeText offset-1 col-10">I'm especially drawn to artistic direction—whether it's crafting visuals, designing assets, or shaping a game's mood. I love putting my own touch on every detail to make something truly pleasing for users.</p>
                         <p className="aboutMeText offset-1 col-10">I also make websites, like this one thanks to my first year's formation on WEB languages. Now if you have any questions feel free to contact me :{"))"}</p>
                         <div className="buttonContainer">
                             <a class="button" download="Tom LE GROS.pdf" href="https://download939.mediafire.com/a2k2srdck8qgsyM3bJK_8jCS8n06C4UDsuQerLZaEvUnlULy2aS0C4rUgHMcYSc7vD1xLlzBLzBeRDtlUFzhqHlV_3hehQDfCglpfP8RWY5lQ08Q9ftD_GDaMBTyrXAlkTWpzjaeNT-zf39V0hCo_AJ8lI_6nW1XOvvU_CLupg/9nm28oufdo4htjh/English+CV.pdf"> 
