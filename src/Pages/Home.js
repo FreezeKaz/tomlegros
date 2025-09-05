@@ -7,7 +7,7 @@ import Skills from "../Components/Skill.js"
 import Project from "../Components/Project.js"
 import {FaDiscord, FaGithub, FaLinkedin, FaPhone, FaEnvelope, FaLocationArrow } from "react-icons/fa"
 
-import bgVideo from "../Content/video/sukuna.mp4"
+import bgVideo from "../Content/video/nightcity.mp4"
 import LINK from "../Content/link";
 
 class Home extends React.Component {
@@ -72,10 +72,9 @@ class Home extends React.Component {
                 <div id="aboutme">  
                     <div className="aboutContent offset-xl-3 col-xl-6 row">
                         <h2>About Me</h2>
-                        <p className="aboutMeText offset-1 col-10">Hi ! I'm Tom, a pasionate game programmer still freshly graduated from a Game Development Bachelor's in France.</p>
-                        <p className="aboutMeText offset-1 col-10">Here you will be able to see some of the projects I'm the most proud of. I have a strong perserverance for learning new things and being able to understand them as fast as possible as well as taking challenges and pushing boundaries. I always put some addition time in all of my creations to polish and add new features to always go further in the making.</p>
-                        <p className="aboutMeText offset-1 col-10">I'm especially drawn to artistic direction—whether it's crafting visuals, designing assets, or shaping a game's mood. I love putting my own touch on every detail to make something truly pleasing for users.</p>
-                        <p className="aboutMeText offset-1 col-10">I also make websites, like this one thanks to my first year's formation on WEB languages. Now if you have any questions feel free to contact me :{"))"}</p>
+                        <p className="aboutMeText offset-1 col-10">I am a Professional Unity Developer, specializing in 2D and mobile game development, with proven experience creating multiple prototypes and delivering a published title on both Android and iOS platforms, I bring strong expertise in creating optimized and visually engaging mobile games.</p>
+                        <p className="aboutMeText offset-1 col-10">I thrive in fast paced and creative environments. I'm extremely experienced in rapid prototyping, putting to life existing ideas or new concepts or even refining through testing and user feedback. My work emphasizes scalability, quality, user-engagement and thus, ensuring each project to grow into a polished market-ready product.</p>
+                        <p className="aboutMeText offset-1 col-10">I am passionate about creating engaging, addictive and casual experiences. By combining intuitive UI/UX and polished 2D visuals, my goal is to create games that are fun and accessible while maintaining high performance and quality.</p>
                         <div className="buttonContainer">
                             <a class="button" download="Tom LE GROS.pdf" href="https://download939.mediafire.com/a2k2srdck8qgsyM3bJK_8jCS8n06C4UDsuQerLZaEvUnlULy2aS0C4rUgHMcYSc7vD1xLlzBLzBeRDtlUFzhqHlV_3hehQDfCglpfP8RWY5lQ08Q9ftD_GDaMBTyrXAlkTWpzjaeNT-zf39V0hCo_AJ8lI_6nW1XOvvU_CLupg/9nm28oufdo4htjh/English+CV.pdf"> 
                                 <span></span>
@@ -132,16 +131,13 @@ class Home extends React.Component {
                     </div>
                     
                     </section>  
-                
-                <div class="parallax">
+                    <div class="parallax">
                     <video className="bgvideo" autoPlay muted loop>
                         <source src={bgVideo} type="video/mp4" />
                     </video>
                 </div>
-
             </div>
 
-        
             </>
         );
     }
