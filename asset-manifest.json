@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tomlegros/static/css/main.3c8fb552.css",
+    "main.css": "/tomlegros/static/css/main.324109ca.css",
     "main.js": "/tomlegros/static/js/main.778c786c.js",
     "static/media/sukuna.mp4": "/tomlegros/static/media/sukuna.d91e98aa2cba23cb2624.mp4",
     "static/media/nightcity.mp4": "/tomlegros/static/media/nightcity.786b0cca0f974463672d.mp4",
     "static/media/EthnocentricRg-Italic.woff": "/tomlegros/static/media/EthnocentricRg-Italic.80e60df5b14d167569c1.woff",
     "static/media/EthnocentricRg-Italic.woff2": "/tomlegros/static/media/EthnocentricRg-Italic.782d964aa6ffbf573b57.woff2",
     "index.html": "/tomlegros/index.html",
-    "main.3c8fb552.css.map": "/tomlegros/static/css/main.3c8fb552.css.map",
+    "main.324109ca.css.map": "/tomlegros/static/css/main.324109ca.css.map",
     "main.778c786c.js.map": "/tomlegros/static/js/main.778c786c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c8fb552.css",
+    "static/css/main.324109ca.css",
     "static/js/main.778c786c.js"
   ]
 }
