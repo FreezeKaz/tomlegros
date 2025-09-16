@@ -132,13 +132,13 @@ class Header extends React.Component {
                             </div>
                         </Link>
                         <div className="items-nav-container">
-                            <span>[</span>
+                            {/* <span>[</span>
                             
                         <a href="/tomlegros">Skills</a>
                         <a href="/tomlegros">Portfolio</a>
                         <a href="/tomlegros">About Me</a>
                         <a href="/tomlegros">Contact</a>
-                            <span>]</span>
+                            <span>]</span> */}
                         </div>
                     </div>
                     <div className="social-networks-container">
